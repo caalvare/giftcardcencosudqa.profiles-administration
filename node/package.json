@@ -1,0 +1,28 @@
+{
+  "name": "profiles-administration",
+  "description": "Profiles Administration",
+  "main": "index.ts",
+  "author": "Carlos Alvarez",
+  "license": "ISC",
+  "dependencies": {
+    "cookie": "^0.3.1",
+    "ramda": "^0.26.1"
+  },
+  "devDependencies": {
+    "@types/graphql": "^14.0.7",
+    "@types/koa": "^2.0.46",
+    "@types/node": "^12.0.0",
+    "@types/ramda": "types/npm-ramda#dist",
+    "@vtex/api": "6.45.12",
+    "@vtex/tsconfig": "^0.5.6",
+    "typescript": "3.9.7"
+  },
+  "resolutions": {
+    "@types/express-serve-static-core": "4.17.20",
+    "@types/express": "4.17.2"
+  },
+  "scripts": {
+    "lint": "eslint --ext .ts ."
+  },
+  "version": "0.0.0"
+}

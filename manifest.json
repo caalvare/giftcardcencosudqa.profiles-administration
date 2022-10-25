@@ -1,0 +1,34 @@
+{
+  "vendor": "giftcardcencosudqa",
+  "name": "profiles-administration",
+  "version": "0.0.0",
+  "title": "Profiles Administration",
+  "description": "Profiles Administration App",
+  "dependencies": {},
+  "builders": {
+    "graphql": "1.x",
+    "node": "6.x"
+  },
+  "registries": ["smartcheckout"],
+  "scripts": {
+    "postreleasy": "vtex publish --public"
+  },
+  "credentialType": "absolute",
+  "policies": [
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "portal.vtexcommercestable.com.br",
+        "path": "/api/*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "api.vtex.com",
+        "path": "/dataentities/*"
+      }
+    }
+  ],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}
